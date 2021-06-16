@@ -19,7 +19,7 @@ body {
 
 main {
   width: 100%;
-  margin: 80px auto 0 auto;
+  margin: 70px auto 0 auto;
   display: flex;
   justify-content: center;
 }
@@ -150,7 +150,7 @@ input:checked ~ .checkbox-label .checkmark::after {
   display: flex;
   margin-top: 10px;
   max-width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -175,8 +175,9 @@ input:checked ~ .checkbox-label .checkmark::after {
   font-family: 'JetBrains Mono', 'Arial', 'sans-serif';
 }
 
-.link i {
+.link i, .link span {
   font-size: 22px;
+  margin-right: 8px;
 }
 
 .linkedin {
@@ -187,16 +188,20 @@ input:checked ~ .checkbox-label .checkmark::after {
   background-color: #046799;
 }
 
+.cv {
+  background-color: #F54748;
+}
+
+.cv:hover {
+  background-color: #db3e3e;
+}
+
 .github {
   background-color: #494949;
 }
 
 .github:hover {
   background-color: #3f3f3f;
-}
-
-.link i {
-  margin-right: 8px;
 }
 
 @media(max-width:400px) {
