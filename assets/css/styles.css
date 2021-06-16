@@ -18,7 +18,8 @@ body {
 }
 
 main {
-  margin-top: 80px;
+  width: 100%;
+  margin: 80px auto;
   display: flex;
   justify-content: center;
 }
@@ -26,13 +27,22 @@ main {
 
 .content {
   color: var(--secondary);
-  max-width: 100vw;
+  max-width: 95%;
+  width: 360px;
   transition: color 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+hr {
+  width: 100%;
 }
 
 .header {
   display: flex;
   align-items: flex-start;
+  margin-bottom: 10px;
 }
 
 .checkbox-label {
@@ -126,12 +136,14 @@ input:checked ~ .checkbox-label .checkmark::after {
 
 .content .icons-list {
   display: flex;
-  margin: 20px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
 }
 
 .icons-list .tech-icon {
   font-size: 30px;
-  margin: 0 5px;
+  margin: 5px;
 }
 
 .icons-list .mongo {
@@ -140,9 +152,10 @@ input:checked ~ .checkbox-label .checkmark::after {
 
 .links-list {
   display: flex;
+  margin-top: 10px;
+  max-width: 100%;
   justify-content: space-between;
-  margin-top: 20px;
-  width: 350px;
+  flex-wrap: wrap;
 }
 
 .links-list a {
@@ -162,6 +175,7 @@ input:checked ~ .checkbox-label .checkmark::after {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  margin: 5px;
   font-family: 'JetBrains Mono', 'Arial', 'sans-serif';
 }
 
@@ -187,4 +201,33 @@ input:checked ~ .checkbox-label .checkmark::after {
 
 .link i {
   margin-right: 8px;
+}
+
+@media(max-width:400px) {
+  .links-list .link {
+    width: 130px;
+    font-size: 14px;
+  }
+
+  .links-list {
+    justify-content: space-evenly;
+  }
+}
+
+@media(max-width:370px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .checkbox-div {
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 230px) {
+  .content .email {
+    font-size: 12px;
+  }
 }
