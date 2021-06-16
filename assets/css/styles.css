@@ -146,10 +146,6 @@ input:checked ~ .checkbox-label .checkmark::after {
   margin: 5px;
 }
 
-.icons-list .mongo {
-  margin: 0;
-}
-
 .links-list {
   display: flex;
   margin-top: 10px;
