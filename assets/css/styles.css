@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@font-face {
+  font-family: 'JetBrains Mono Regular';
+  src: url('../fonts/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Bold';
+  src: url('../fonts/JetBrainsMono-Bold.ttf') format('truetype');
+}
 
 :root {
   --primary: #F0F5F9;
@@ -13,7 +21,7 @@ body {
   box-sizing: border-box;
   background-color: var(--primary);
 
-  font-family: 'JetBrains Mono', 'Arial', 'sans-serif';
+  font-family: 'JetBrains Mono Regular', 'Arial', 'sans-serif';
   transition: background-color 0.2s;
 }
 
@@ -33,6 +41,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  font-family: 'JetBrains Mono Bold', 'Arial', 'sans-serif';
 }
 
 hr {
@@ -62,7 +72,8 @@ hr {
 }
 
 .checkbox-div .checkbox-label span{
-  margin-left: 5px;
+  margin-left: 8px;
+  font-family: 'JetBrains Mono Regular', 'Arial', 'sans-serif';
 }
 
 .checkbox-label .checkmark {
@@ -109,17 +120,23 @@ input:checked ~ .checkbox-label .checkmark::after {
   width: 100%;
 }
 
+hr {
+  margin: 0;
+}
+
 .profile-info .profile-image {
-  width: 140px;
+  width: 100px;
   margin-bottom: 10px;
 }
 
 .content .name {
+  font-weight: normal;
   margin: 0;
   margin-bottom: 8px;
 }
 
 .content .email {
+  font-weight: normal;
   margin: 0;
   margin-bottom: 16px;
   color: var(--secondaryLight);
@@ -128,6 +145,7 @@ input:checked ~ .checkbox-label .checkmark::after {
 }
 
 .content .study {
+  font-weight: normal;
   margin: 5px 0 0 0;
   color: var(--secondaryLight);
   
@@ -163,20 +181,22 @@ input:checked ~ .checkbox-label .checkmark::after {
   cursor: pointer;
   text-decoration: none;
   border: none;
-  width: 168px;
-  height: 56px;
-  font-size: 18px;
+  width: 126px;
+  height: 46px;
+  font-size: 14px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
   margin: 5px;
-  font-family: 'JetBrains Mono', 'Arial', 'sans-serif';
+  font-family: 'JetBrains Mono Regular', 'Arial', 'sans-serif';
+
+  transition: background-color 0.2s;
 }
 
 .link i, .link span {
-  font-size: 22px;
+  font-size: 20px;
   margin-right: 8px;
 }
 
