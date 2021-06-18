@@ -126,7 +126,13 @@ hr {
 
 .profile-info .profile-image {
   width: 100px;
+  height: 100px;
+  background: url(../images/profile-pic.jpeg);
   margin-bottom: 10px;
+  background-size: cover;
+  border-radius: 50%;
+
+  margin-bottom: 15px;
 }
 
 .content .name {
