@@ -127,7 +127,7 @@ hr {
 .profile-info .profile-image {
   width: 100px;
   height: 100px;
-  background: url(../images/profile-pic.jpeg);
+  background: url(../images/profile-pic.png);
   margin-bottom: 10px;
   background-size: cover;
   border-radius: 50%;
@@ -168,6 +168,7 @@ hr {
 .icons-list .tech-icon {
   font-size: 30px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .links-list {
