@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'JetBrains Mono Regular';
-  src: url('../fonts/JetBrainsMono-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'JetBrains Mono Bold';
-  src: url('../fonts/JetBrainsMono-Bold.ttf') format('truetype');
-}
-
 :root {
   --primary: #F0F5F9;
   --secondary: #353535;
@@ -21,7 +11,7 @@ body {
   box-sizing: border-box;
   background-color: var(--primary);
 
-  font-family: 'JetBrains Mono Regular', 'Arial', 'sans-serif';
+  font-family: 'Arial', 'sans-serif';
   transition: background-color 0.2s;
 }
 
@@ -42,7 +32,8 @@ main {
   flex-direction: column;
   justify-content: center;
 
-  font-family: 'JetBrains Mono Bold', 'Arial', 'sans-serif';
+  font-family: 'Arial', 'sans-serif';
+  font-weight: bold;
 }
 
 hr {
@@ -71,9 +62,9 @@ hr {
   cursor: pointer;
 }
 
-.checkbox-div .checkbox-label span{
+.checkbox-div .checkbox-label span {
   margin-left: 8px;
-  font-family: 'JetBrains Mono Regular', 'Arial', 'sans-serif';
+  font-family: 'Arial', 'sans-serif';
 }
 
 .checkbox-label .checkmark {
@@ -190,14 +181,14 @@ hr {
   border: none;
   width: 126px;
   height: 46px;
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
   margin: 5px;
-  font-family: 'JetBrains Mono Regular', 'Arial', 'sans-serif';
+  font-family: 'Arial', 'sans-serif';
 
   transition: background-color 0.2s;
 }
