@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 :root {
   --primary: #F0F5F9;
   --secondary: #353535;
@@ -11,7 +13,7 @@ body {
   box-sizing: border-box;
   background-color: var(--primary);
 
-  font-family: 'Arial', 'sans-serif';
+  font-family: 'Inter', sans-serif;
   transition: background-color 0.2s;
 }
 
@@ -26,14 +28,12 @@ main {
 .content {
   color: var(--secondary);
   max-width: 95%;
-  width: 360px;
+  width: 380px;
   transition: color 0.2s;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  font-family: 'Arial', 'sans-serif';
-  font-weight: bold;
+  font-weight: normal;
 }
 
 hr {
@@ -64,7 +64,6 @@ hr {
 
 .checkbox-div .checkbox-label span {
   margin-left: 8px;
-  font-family: 'Arial', 'sans-serif';
 }
 
 .checkbox-label .checkmark {
@@ -82,11 +81,11 @@ hr {
   background-color: #c9c9c9;
 }
 
-input:checked ~ .checkbox-label .checkmark {
+input:checked~.checkbox-label .checkmark {
   background-color: var(--secondary);
 }
 
-.checkbox-label .checkmark:after {  
+.checkbox-label .checkmark:after {
   content: "";
   position: absolute;
   opacity: 0;
@@ -103,7 +102,7 @@ input:checked ~ .checkbox-label .checkmark {
   transition: opacity 0.2s;
 }
 
-input:checked ~ .checkbox-label .checkmark::after {
+input:checked~.checkbox-label .checkmark::after {
   opacity: 1;
 }
 
@@ -127,7 +126,7 @@ hr {
 }
 
 .content .name {
-  font-weight: normal;
+  font-weight: bold;
   margin: 0;
   margin-bottom: 8px;
 }
@@ -137,7 +136,6 @@ hr {
   margin: 0;
   margin-bottom: 16px;
   color: var(--secondaryLight);
-  
   transition: color 0.2s;
 }
 
@@ -145,7 +143,6 @@ hr {
   font-weight: normal;
   margin: 5px 0 0 0;
   color: var(--secondaryLight);
-  
   transition: color 0.2s;
 }
 
@@ -154,11 +151,18 @@ hr {
   flex-wrap: wrap;
   justify-content: center;
   margin: 10px 0;
+  align-items: center;
 }
 
-.icons-list .tech-icon {
+.icons-list i.tech-icon {
   font-size: 30px;
   margin: 5px;
+  cursor: pointer;
+}
+
+.icons-list img.tech-icon {
+  height: 30px;
+  margin: 2px;
   cursor: pointer;
 }
 
@@ -188,12 +192,12 @@ hr {
   justify-content: center;
   border-radius: 4px;
   margin: 5px;
-  font-family: 'Arial', 'sans-serif';
 
   transition: background-color 0.2s;
 }
 
-.link i, .link span {
+.link i,
+.link span {
   font-size: 20px;
   margin-right: 8px;
 }
@@ -207,11 +211,11 @@ hr {
 }
 
 .cv {
-  background-color: #F54748;
+  background-color: #088486;
 }
 
 .cv:hover {
-  background-color: #db3e3e;
+  background-color: rgb(7, 117, 119);
 }
 
 .github {
@@ -221,6 +225,15 @@ hr {
 .github:hover {
   background-color: #3f3f3f;
 }
+
+.youtube {
+  background-color: #e63946;
+}
+
+.youtube:hover {
+  background-color: #c7313d;
+}
+
 
 @media(max-width:400px) {
   .links-list .link {
