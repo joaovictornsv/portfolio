@@ -2,6 +2,7 @@
 
 :root {
   --primary: #F0F5F9;
+  --tech-icon-bg: #ebecec;
   --secondary: #353535;
   --secondaryLight: #4e4e4e;
 }
@@ -38,6 +39,7 @@ main {
 
 hr {
   width: 100%;
+  margin: 0;
 }
 
 .header {
@@ -110,10 +112,6 @@ input:checked~.checkbox-label .checkmark::after {
   width: 100%;
 }
 
-hr {
-  margin: 0;
-}
-
 .profile-info .profile-image {
   width: 100px;
   height: 100px;
@@ -154,16 +152,15 @@ hr {
   align-items: center;
 }
 
-.icons-list i.tech-icon {
+.icons-list .tech-icon {
   font-size: 30px;
-  margin: 5px;
-  cursor: pointer;
-}
-
-.icons-list img.tech-icon {
   height: 30px;
-  margin: 2px;
+  padding: 6px;
+  margin: 4px;
   cursor: pointer;
+  background-color: var(--tech-icon-bg);
+  border-radius: 8px;
+  transition: background-color 0.2s;
 }
 
 .links-list {
