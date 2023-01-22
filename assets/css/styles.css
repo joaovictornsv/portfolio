@@ -163,6 +163,10 @@ input:checked~.checkbox-label .checkmark::after {
   transition: background-color 0.2s;
 }
 
+.icons-list .tech-icon:hover {
+  background-color: transparent;
+}
+
 .links-list {
   display: flex;
   margin-top: 10px;
