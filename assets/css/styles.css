@@ -28,8 +28,8 @@ main {
 
 .content {
   color: var(--secondary);
-  max-width: 95%;
-  width: 380px;
+  max-width: 90%;
+  width: 740px;
   transition: color 0.2s;
   display: flex;
   flex-direction: column;
@@ -39,13 +39,28 @@ main {
 
 hr {
   width: 100%;
+  opacity: 0.6;
   margin: 0;
+}
+
+.tag-group {
+  margin-bottom: 5px;
+}
+
+.tag {
+  height: 24px;
 }
 
 .header {
   display: flex;
   align-items: flex-start;
   margin-bottom: 10px;
+}
+
+.description p {
+  text-align: justify;
+  overflow-wrap: break-word;
+  font-size: small;
 }
 
 .checkbox-label {
@@ -55,9 +70,7 @@ hr {
 
 .checkbox-div input {
   cursor: pointer;
-  opacity: 0;
-  height: 0;
-  width: 0;
+  display: none;
 }
 
 .checkbox-div .checkbox-label {
