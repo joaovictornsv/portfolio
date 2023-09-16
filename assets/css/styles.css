@@ -29,7 +29,7 @@ main {
 .content {
   color: var(--secondary);
   max-width: 90%;
-  width: 740px;
+  width: 480px;
   transition: color 0.2s;
   display: flex;
   flex-direction: column;
@@ -41,14 +41,6 @@ hr {
   width: 100%;
   opacity: 0.6;
   margin: 0;
-}
-
-.tag-group {
-  margin-bottom: 5px;
-}
-
-.tag {
-  height: 24px;
 }
 
 .header {
@@ -79,11 +71,12 @@ hr {
 
 .checkbox-div .checkbox-label span {
   margin-left: 8px;
+  font-size: small;
 }
 
 .checkbox-label .checkmark {
-  height: 20px;
-  width: 20px;
+  height: 14px;
+  width: 14px;
   background-color: #dbdbdb;
   border-radius: 2px;
   cursor: pointer;
@@ -104,15 +97,14 @@ input:checked~.checkbox-label .checkmark {
   content: "";
   position: absolute;
   opacity: 0;
-  left: 7px;
-  top: 2px;
-  width: 4px;
-  height: 10px;
+  width: 3px;
+  height: 9px;
+  left: 4px;
+  top: 0;
+  transform: translate(50%, 50%) rotate(45deg);
   border: solid var(--primary);
   border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 
   transition: opacity 0.2s;
 }
@@ -126,58 +118,32 @@ input:checked~.checkbox-label .checkmark::after {
 }
 
 .profile-info .profile-image {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background: url(../images/profile-pic.png);
   margin-bottom: 10px;
   background-size: cover;
   border-radius: 50%;
-
-  margin-bottom: 15px;
 }
 
 .content .name {
   font-weight: bold;
   margin: 0;
-  margin-bottom: 8px;
 }
 
 .content .email {
   font-weight: normal;
-  margin: 0;
+  margin-top: 4px;
   margin-bottom: 16px;
   color: var(--secondaryLight);
   transition: color 0.2s;
 }
 
-.content .study {
+.content .job {
   font-weight: normal;
   margin: 5px 0 0 0;
   color: var(--secondaryLight);
   transition: color 0.2s;
-}
-
-.content .icons-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px 0;
-  align-items: center;
-}
-
-.icons-list .tech-icon {
-  font-size: 30px;
-  height: 30px;
-  padding: 6px;
-  margin: 4px;
-  cursor: pointer;
-  background-color: var(--tech-icon-bg);
-  border-radius: 8px;
-  transition: background-color 0.2s;
-}
-
-.icons-list .tech-icon:hover {
-  background-color: transparent;
 }
 
 .links-list {
@@ -186,33 +152,35 @@ input:checked~.checkbox-label .checkmark::after {
   max-width: 100%;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 8px
 }
 
 .links-list a {
   text-decoration: none;
 }
 
+a {
+  color: var(--secondaryLight);
+}
+
 .links-list .link {
   color: #FBFBFB;
   cursor: pointer;
-  text-decoration: none;
   border: none;
-  width: 126px;
-  height: 46px;
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  margin: 5px;
+  padding: 8px 12px;
 
   transition: background-color 0.2s;
 }
 
 .link i,
 .link span {
-  font-size: 20px;
+  font-size: 14px;
   margin-right: 8px;
 }
 
@@ -263,12 +231,13 @@ input:checked~.checkbox-label .checkmark::after {
 @media(max-width:370px) {
   .header {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
   }
 
   .header .checkbox-div {
     margin-bottom: 10px;
+    align-self: end;
   }
 }
 
