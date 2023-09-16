@@ -60,9 +60,14 @@ hr {
   align-items: center;
 }
 
+.checkbox-div {
+  display: flex;
+  align-items: center;
+}
+
 .checkbox-div input {
   cursor: pointer;
-  display: none;
+  accent-color: var(--secondaryLight);
 }
 
 .checkbox-div .checkbox-label {
@@ -70,47 +75,7 @@ hr {
 }
 
 .checkbox-div .checkbox-label span {
-  margin-left: 8px;
   font-size: small;
-}
-
-.checkbox-label .checkmark {
-  height: 14px;
-  width: 14px;
-  background-color: #dbdbdb;
-  border-radius: 2px;
-  cursor: pointer;
-  position: relative;
-
-  transition: background-color 0.2s;
-}
-
-.checkbox-label:hover .checkmark {
-  background-color: #c9c9c9;
-}
-
-input:checked~.checkbox-label .checkmark {
-  background-color: var(--secondary);
-}
-
-.checkbox-label .checkmark:after {
-  content: "";
-  position: absolute;
-  opacity: 0;
-  width: 3px;
-  height: 9px;
-  left: 4px;
-  top: 0;
-  transform: translate(50%, 50%) rotate(45deg);
-  border: solid var(--primary);
-  border-width: 0 3px 3px 0;
-  -ms-transform: rotate(45deg);
-
-  transition: opacity 0.2s;
-}
-
-input:checked~.checkbox-label .checkmark::after {
-  opacity: 1;
 }
 
 .profile-info {
