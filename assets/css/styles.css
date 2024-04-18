@@ -5,6 +5,8 @@
   --tech-icon-bg: #ebecec;
   --secondary: #353535;
   --secondaryLight: #4e4e4e;
+  --sunDisplay: 'block';
+  --moonDisplay: 'none';
 }
 
 
@@ -29,11 +31,12 @@ main {
 .content {
   color: var(--secondary);
   max-width: 90%;
-  width: 480px;
+  width: 720px;
   transition: color 0.2s;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 32px;
   font-weight: normal;
 }
 
@@ -46,13 +49,19 @@ hr {
 .header {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 10px;
 }
 
-.description p {
+.description ul {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0;
+}
+
+.description li {
   text-align: justify;
   overflow-wrap: break-word;
-  font-size: small;
 }
 
 .checkbox-label {
@@ -67,6 +76,7 @@ hr {
 
 .checkbox-div input {
   cursor: pointer;
+  display: none;
   accent-color: var(--secondaryLight);
 }
 
@@ -74,8 +84,12 @@ hr {
   cursor: pointer;
 }
 
-.checkbox-div .checkbox-label span {
-  font-size: small;
+.checkbox-div .checkbox-label .sun {
+  display: var(--sunDisplay);
+}
+
+.checkbox-div .checkbox-label .moon {
+  display: var(--moonDisplay);
 }
 
 .profile-info {
@@ -96,7 +110,7 @@ hr {
   margin: 0;
 }
 
-.content .email {
+.content .job {
   font-weight: normal;
   margin-top: 4px;
   margin-bottom: 16px;
@@ -113,7 +127,6 @@ hr {
 
 .links-list {
   display: flex;
-  margin-top: 10px;
   max-width: 100%;
   justify-content: center;
   flex-wrap: wrap;
@@ -181,6 +194,16 @@ a {
   background-color: #c7313d;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.footer a {
+  font-size: 14px;
+}
 
 @media(max-width:400px) {
   .links-list .link {

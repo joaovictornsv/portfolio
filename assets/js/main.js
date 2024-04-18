@@ -23,6 +23,8 @@ function setLightTheme() {
   rootCSS.setProperty('--tech-icon-bg', '#e4e8eb');
   rootCSS.setProperty('--secondary', '#212121');
   rootCSS.setProperty('--secondaryLight', '#393E46');
+  rootCSS.setProperty('--sunDisplay', 'none');
+  rootCSS.setProperty('--moonDisplay', 'block');
   localStorage.setItem('theme', 'light');
   checkbox.checked = false;
 }
@@ -32,6 +34,8 @@ function setDarkTheme() {
   rootCSS.setProperty('--tech-icon-bg', '#3f3f3f');
   rootCSS.setProperty('--secondary', '#ececec');
   rootCSS.setProperty('--secondaryLight', '#e5e7e9');
+  rootCSS.setProperty('--sunDisplay', 'block');
+  rootCSS.setProperty('--moonDisplay', 'none');
   localStorage.setItem('theme', 'dark');
   checkbox.checked = true;
 }
